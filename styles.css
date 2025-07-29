@@ -39,7 +39,7 @@ nav a {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 412px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -63,12 +63,12 @@ nav a {
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background-image: url('img/heroe.webp'); 
+  background-image: url('img/heroe.jpg'); 
   background-size: cover;
   background-position: center;
   color: var(--bg);
   position: relative;        /*tuve que poner para poner el overlay en absolute*/
-  min-height: 400px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;    /*alinea los elementos en columna*/
   justify-content: center;   /*centro verticalmente*/
@@ -115,10 +115,9 @@ nav a {
   color: var(--bg);
 }
 
-.btn-secondary {
-  background: transparent;
-  border: 2px solid #ff5e57;
-  color: #ff5e57;
+.btn-2 {
+  background: var(--primary);
+  color: var(--bg);
 }
 
 .section {
@@ -165,6 +164,10 @@ nav a {
   font-size: 0.9rem;
 }
 
+.store-preview h3 {
+  color: var(--primary);
+}
+
 .event-list {
   list-style: none;
   margin-top: 2rem;
@@ -194,15 +197,4 @@ footer.footer {
   color: #aaa;
   text-decoration: none;
   font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
