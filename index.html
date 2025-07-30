@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sin Azúcar Sessions - Música en vivo en una cafetería. Descubrí artistas emergentes en un ambiente íntimo y auténtico." />
   <title>Sin Azúcar Sessions</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -16,10 +16,10 @@
     <h1>Sin Azúcar Sessions</h1>
     <nav>
       <a href="#">Inicio</a>
-      <a href="pages/productos.html">Artistas</a>
-      <a href="pages\delivery.html">Tienda</a>
-      <a href="pages\contacto.html">Agenda</a>
-      <a href="pages\contacto.html">Blog</a>
+      <a href="pages/artistas.html">Artistas</a>
+      <a href="pages\tienda.html">Tienda</a>
+      <a href="pages\agenda.html">Agenda</a>
+      <a href="pages\blog.html">Blog</a>
     </nav>
   </header>
 
@@ -32,16 +32,18 @@
   
     <section id="artistas" class="section">
       <h2>Artistas Destacados</h2>
-      <div class="artist-grid">
-        <div class="artist-card">
-          <img src="img/artista1.jpg" alt="Artista 1">
-          <h3>Nombre Artista</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="img/art1.png" alt="Artista 1">
+          <h3>Servilleta Polaroid</h3>
           <p>Indie / Soul</p>
+          <a href="#" class="btn-2">Ver en YouTube</a>
         </div>
-        <div class="artist-card">
-          <img src="img/artista2.jpg" alt="Artista 2">
-          <h3>Nombre Artista</h3>
-          <p>Pop Acústico</p>
+        <div class="card">
+          <img src="img/art2.png" alt="Artista 2">
+          <h3>Polenta sin Salsa</h3>
+          <p>Indie Rock</p>
+          <a href="#" class="btn-2">Ver en YouTube</a>
         </div>
       </div>
     </section>
@@ -49,66 +51,49 @@
     <section id="agenda" class="section dark">
       <h2>Agenda</h2>
       <ul class="event-list">
-        <li><strong>12 Agosto</strong> - Sofía Vega en Café Umbral</li>
-        <li><strong>19 Agosto</strong> - Los Días en Bohemia Café</li>
-        <li><strong>26 Agosto</strong> - Lujo Natural en Zoco</li>
+        <li>19 Agosto - Takawishi en Café Umbral</li>
+        <li>26 Agosto - Sofía Vega en Café Umbral</li>
+        <li>5 Septiembre - Viejos Vinagres en Zoco</li>
       </ul>
-      <a href="#" class="btn-2">Ver Agenda Completa</a>
+      <a href="#" class="btn-1">Ver Agenda Completa</a>
     </section>
 
-    <section class="store-preview py-5 bg-light">
-      <div class="container text-center">
-         <h3 class="mb-4">Merchandising Exclusivo</h3>
-           <div class="row g-4">
-             <div class="col-md-4">
-              <div class="card h-100">
-               <img src="producto1.jpg" class="card-img-top" alt="Remera Banda A">
-               <div class="card-body">
-                 <h5 class="card-title">Remera Banda A</h5>
-                 <p class="card-text">$7.500</p>
-                 <a href="#" class="btn-2">Ver más</a>
-               </div>
-             </div>
-           </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                   <img src="producto2.jpg" class="card-img-top" alt="Tote Bag Edición Limitada">
-                    <div class="card-body">
-                       <h5 class="card-title">Tote Bag Edición Limitada</h5>
-                       <p class="card-text">$4.800</p>
-                      <a href="#" class="btn-2">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100">
-                <img src="producto3.jpg" class="card-img-top" alt="Gorra Sin Azúcar">
-                <div class="card-body">
-                  <h5 class="card-title">Gorra Sin Azúcar</h5>
-                  <p class="card-text">$6.200</p>
-                  <a href="#" class="btn-2">Ver más</a>
-                </div>
-              </div>
-            </div>
-           </div>
-         <div class="mt-4">
-           <a href="#" class="btn-1">Ir a la Tienda</a>
-         </div>
-       </div>
+    <section id="tienda" class="section">
+      <h2>Merchandising</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="img/vaso.png" alt="Vaso termico">
+          <h3>Vaso Térmico Sin Azúcar</h3>
+          <p>$4500</p>
+          <a href="#" class="btn-2">Comprar</a>
+        </div>
+        <div class="card">
+          <img src="img/bag.png" alt="Totebag">
+          <h3>Totebag Sin Azúcar</h3>
+          <p>$3500</p>
+          <a href="#" class="btn-2">Comprar</a>
+        </div>
+        <div class="card">
+          <img src="img/termo.png" alt="Termo">
+          <h3>Termo Sin Azúcar</h3>
+          <p>$8500</p>
+          <a href="#" class="btn-2">Comprar</a>
+        </div>
+      </div>
     </section>
 
     <section id="blog" class="section">
       <h2>Últimos Posts del Blog</h2>
-      <div class="blog-grid">
-        <article class="blog-card">
-          <h3>¿Por qué grabar en una cafetería?</h3>
-          <p>Exploramos la conexión entre lo íntimo del café y lo honesto de la música en vivo.</p>
-          <a href="#">Leer más</a>
+      <div class="grid">
+        <article class="card">
+          <h3>Entrevista Cafetera a Servilleta Polaroid</h3>
+          <p>el soul con sello propio que están haciendo estas genias.</p>
+          <a href="#" class="btn-2">Leer Más</a>
         </article>
-        <article class="blog-card">
+        <article class="card">
           <h3>Top 5 shows de la temporada</h3>
-          <p>Una mirada a los momentos más memorables de Sin Azúcar Sessions.</p>
-          <a href="#">Leer más</a>
+          <p>Reviví las joyitas que nos dejó Sin Azúcar Sessions.</p>
+          <a href="#" class="btn-2">Leer Más</a>
         </article>
       </div>
     </section>
@@ -116,11 +101,17 @@
 
   <footer class="footer">
     <p>&copy; 2025 Sin Azúcar Sessions. Todos los derechos reservados.</p>
-    <ul class="footer-links">
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">YouTube</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
+    <div class="redes">
+     <a href="#">
+      <img src="img\yt.png" alt="Instagram" style="width:100%">
+     </a>
+     <a href="#">
+      <img src="img\ig.png" alt="Whatsapp" style="width:100%">
+     </a>
+     <a href="#">
+      <img src="img\tik.png" alt="TikTok" style="width:100%">
+     </a>
+    </div>
   </footer>
 </body>
 
