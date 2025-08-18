@@ -1,0 +1,18 @@
+footer.footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; 
+  margin: 1rem 0;
+
+  img {
+    width: auto; 
+    height: 40px;
+  }
+}

@@ -1,0 +1,31 @@
+.artist-header {
+  text-align: center;
+  padding: 4rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: $text;
+  }
+
+  .artist-buscar {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid $marroncito;
+    border-radius: 8px;
+  }
+}
+
+.join-us {
+  background-color: $rosita;
+  padding: 3rem 1rem;
+  text-align: center;
+
+  h3 {
+    font-size: 1.8rem;
+    color: $text;
+  }
+}

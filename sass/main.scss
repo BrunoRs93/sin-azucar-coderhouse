@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+@import 'animaciones';  
+@import 'header';
+@import 'inicio';
+@import 'artistas';
+@import 'footer';
+
+
+@include reset;
+
+body {
+  @include base-body;
+}
+
+
+.btn-1 {
+  @include btn($marroncito, $hoverm);
+  &:hover{
+    @include pulse;
+  }
+}   
+
+.btn-2 {
+  @include btn($dark, $hoverd);
+}
+
+
+.section {
+  @include section(center);
+}
+
+.grid {
+  @include grid(300px, 2rem);
+}
+
+
+.card {
+  @include card;
+}
+
