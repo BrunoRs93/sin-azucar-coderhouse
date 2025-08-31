@@ -1,4 +1,4 @@
-// 🔄 Reset global
+
 @mixin reset {
   * {
     margin: 0;
@@ -7,15 +7,16 @@
   }
 }
 
-// 🌍 Estilo base del body
+
 @mixin base-body {
   font-family: 'Inter', sans-serif;
   color: $text;
   line-height: 1.6;
   background-color: $bg;
+  text-decoration: none;
 }
 
-// 🔘 Botones genéricos
+
 @mixin btn($bg-color, $hover-color, $text-color: $bg) {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -34,7 +35,7 @@
   }
 }
 
-// 📦 Secciones
+
 @mixin section($text-align: center) {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -42,7 +43,7 @@
   text-align: $text-align;
 }
 
-// 🔲 Grid adaptable
+
 @mixin grid($min: 300px, $gap: 2rem) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
@@ -50,7 +51,7 @@
   margin-top: 2rem;
 }
 
-// 🃏 Card
+
 @mixin card {
   background: white;
   border-radius: 10px;

@@ -9,46 +9,6 @@
     transform: scale(1);
   }
 }
-header {
-  background-color: #3b2f2f;
-  color: #fff5f0;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header h1 {
-  font-size: 1.5rem;
-}
-header nav a {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  color: #fff5f0;
-  font-weight: bold;
-}
-@media (max-width: 600px) {
-  header nav a {
-    display: inline-block;
-    margin: 0.25rem 0;
-  }
-}
-@media (max-width: 600px) {
-  header nav {
-    margin-top: 0.5rem;
-  }
-}
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -89,7 +49,7 @@ header nav a {
 .dark {
   background-color: #3b2f2f;
   color: #fff5f0;
-  text-align: left;
+  text-align: justify;
   margin: 0 4rem;
 }
 
@@ -150,6 +110,78 @@ footer.footer {
   height: 40px;
 }
 
+.header {
+  height: 80px;
+  background-color: #3b2f2f;
+}
+.header .navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+.header .menu_hamburguesa {
+  display: none;
+}
+.header .menu_hamburguesa:checked + .ul_links {
+  height: calc(100vh - 80px);
+}
+.header .logo {
+  color: #fff5f0;
+}
+.header .list_icon {
+  color: #fff5f0;
+  cursor: pointer;
+}
+.header .ul_links {
+  width: 100%;
+  background-color: #3b2f2f;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all 0.3s;
+  z-index: 100;
+}
+.header .ul_links .link {
+  font-size: 3em;
+  color: #fff5f0;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header .label_hamburguesa {
+    display: none;
+  }
+  .header .ul_links {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  .header .ul_links .link {
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    padding: 0.2rem 0.7rem;
+  }
+  .header .ul_links .link:hover {
+    color: #97604a;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -161,6 +193,7 @@ body {
   color: #2e2e2e;
   line-height: 1.6;
   background-color: #fff5f0;
+  text-decoration: none;
 }
 
 .btn-1 {
@@ -198,6 +231,9 @@ body {
 .btn-2:hover {
   background-color: #1d1717;
   color: #fff5f0;
+}
+.btn-2:hover {
+  animation: pulse 1.5s infinite ease-in-out;
 }
 
 .section {

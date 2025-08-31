@@ -1,10 +1,10 @@
 @import 'variables';
 @import 'mixins';
 @import 'animaciones';  
-@import 'header';
 @import 'inicio';
 @import 'artistas';
 @import 'footer';
+@import 'header';
 
 
 @include reset;
@@ -23,6 +23,9 @@ body {
 
 .btn-2 {
   @include btn($dark, $hoverd);
+  &:hover{
+    @include pulse;
+  }
 }
 
 
